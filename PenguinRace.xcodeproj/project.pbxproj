@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FC08A71B374160002C603D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08A61B374160002C603D /* AppDelegate.swift */; };
+		52FC08A91B374160002C603D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08A81B374160002C603D /* GameScene.sks */; };
+		52FC08AB1B374160002C603D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08AA1B374160002C603D /* GameScene.swift */; };
+		52FC08AD1B374160002C603D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08AC1B374160002C603D /* GameViewController.swift */; };
+		52FC08B01B374160002C603D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08AE1B374160002C603D /* Main.storyboard */; };
+		52FC08B21B374160002C603D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08B11B374160002C603D /* Assets.xcassets */; };
+		52FC08B51B374160002C603D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08B31B374160002C603D /* LaunchScreen.storyboard */; };
+		52FC08C01B374161002C603D /* PenguinRaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08BF1B374161002C603D /* PenguinRaceTests.swift */; };
+		52FC08CB1B374161002C603D /* PenguinRaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08CA1B374161002C603D /* PenguinRaceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FC08BC1B374161002C603D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FC089B1B374160002C603D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FC08A21B374160002C603D;
+			remoteInfo = PenguinRace;
+		};
+		52FC08C71B374161002C603D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FC089B1B374160002C603D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FC08A21B374160002C603D;
+			remoteInfo = PenguinRace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52FC08A31B374160002C603D /* PenguinRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC08A61B374160002C603D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52FC08A81B374160002C603D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		52FC08AA1B374160002C603D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		52FC08AC1B374160002C603D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		52FC08AF1B374160002C603D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FC08B11B374160002C603D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FC08B41B374160002C603D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52FC08B61B374160002C603D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FC08BB1B374161002C603D /* PenguinRaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinRaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC08BF1B374161002C603D /* PenguinRaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinRaceTests.swift; sourceTree = "<group>"; };
+		52FC08C11B374161002C603D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FC08C61B374161002C603D /* PenguinRaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinRaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC08CA1B374161002C603D /* PenguinRaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinRaceUITests.swift; sourceTree = "<group>"; };
+		52FC08CC1B374161002C603D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FC08A01B374160002C603D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC08B81B374161002C603D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC08C31B374161002C603D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FC089A1B374160002C603D = {
+			isa = PBXGroup;
+			children = (
+				52FC08A51B374160002C603D /* PenguinRace */,
+				52FC08BE1B374161002C603D /* PenguinRaceTests */,
+				52FC08C91B374161002C603D /* PenguinRaceUITests */,
+				52FC08A41B374160002C603D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FC08A41B374160002C603D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FC08A31B374160002C603D /* PenguinRace.app */,
+				52FC08BB1B374161002C603D /* PenguinRaceTests.xctest */,
+				52FC08C61B374161002C603D /* PenguinRaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FC08A51B374160002C603D /* PenguinRace */ = {
+			isa = PBXGroup;
+			children = (
+				52FC08A61B374160002C603D /* AppDelegate.swift */,
+				52FC08A81B374160002C603D /* GameScene.sks */,
+				52FC08AA1B374160002C603D /* GameScene.swift */,
+				52FC08AC1B374160002C603D /* GameViewController.swift */,
+				52FC08AE1B374160002C603D /* Main.storyboard */,
+				52FC08B11B374160002C603D /* Assets.xcassets */,
+				52FC08B31B374160002C603D /* LaunchScreen.storyboard */,
+				52FC08B61B374160002C603D /* Info.plist */,
+			);
+			path = PenguinRace;
+			sourceTree = "<group>";
+		};
+		52FC08BE1B374161002C603D /* PenguinRaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				52FC08BF1B374161002C603D /* PenguinRaceTests.swift */,
+				52FC08C11B374161002C603D /* Info.plist */,
+			);
+			path = PenguinRaceTests;
+			sourceTree = "<group>";
+		};
+		52FC08C91B374161002C603D /* PenguinRaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52FC08CA1B374161002C603D /* PenguinRaceUITests.swift */,
+				52FC08CC1B374161002C603D /* Info.plist */,
+			);
+			path = PenguinRaceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FC08A21B374160002C603D /* PenguinRace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC08CF1B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRace" */;
+			buildPhases = (
+				52FC089F1B374160002C603D /* Sources */,
+				52FC08A01B374160002C603D /* Frameworks */,
+				52FC08A11B374160002C603D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenguinRace;
+			productName = PenguinRace;
+			productReference = 52FC08A31B374160002C603D /* PenguinRace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52FC08BA1B374161002C603D /* PenguinRaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC08D21B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRaceTests" */;
+			buildPhases = (
+				52FC08B71B374161002C603D /* Sources */,
+				52FC08B81B374161002C603D /* Frameworks */,
+				52FC08B91B374161002C603D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FC08BD1B374161002C603D /* PBXTargetDependency */,
+			);
+			name = PenguinRaceTests;
+			productName = PenguinRaceTests;
+			productReference = 52FC08BB1B374161002C603D /* PenguinRaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52FC08C51B374161002C603D /* PenguinRaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC08D51B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRaceUITests" */;
+			buildPhases = (
+				52FC08C21B374161002C603D /* Sources */,
+				52FC08C31B374161002C603D /* Frameworks */,
+				52FC08C41B374161002C603D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FC08C81B374161002C603D /* PBXTargetDependency */,
+			);
+			name = PenguinRaceUITests;
+			productName = PenguinRaceUITests;
+			productReference = 52FC08C61B374161002C603D /* PenguinRaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FC089B1B374160002C603D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "John Goering";
+				TargetAttributes = {
+					52FC08A21B374160002C603D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					52FC08BA1B374161002C603D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 52FC08A21B374160002C603D;
+					};
+					52FC08C51B374161002C603D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 52FC08A21B374160002C603D;
+					};
+				};
+			};
+			buildConfigurationList = 52FC089E1B374160002C603D /* Build configuration list for PBXProject "PenguinRace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FC089A1B374160002C603D;
+			productRefGroup = 52FC08A41B374160002C603D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FC08A21B374160002C603D /* PenguinRace */,
+				52FC08BA1B374161002C603D /* PenguinRaceTests */,
+				52FC08C51B374161002C603D /* PenguinRaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FC08A11B374160002C603D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC08A91B374160002C603D /* GameScene.sks in Resources */,
+				52FC08B51B374160002C603D /* LaunchScreen.storyboard in Resources */,
+				52FC08B21B374160002C603D /* Assets.xcassets in Resources */,
+				52FC08B01B374160002C603D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC08B91B374161002C603D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC08C41B374161002C603D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FC089F1B374160002C603D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC08AB1B374160002C603D /* GameScene.swift in Sources */,
+				52FC08AD1B374160002C603D /* GameViewController.swift in Sources */,
+				52FC08A71B374160002C603D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC08B71B374161002C603D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC08C01B374161002C603D /* PenguinRaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC08C21B374161002C603D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC08CB1B374161002C603D /* PenguinRaceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FC08BD1B374161002C603D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FC08A21B374160002C603D /* PenguinRace */;
+			targetProxy = 52FC08BC1B374161002C603D /* PBXContainerItemProxy */;
+		};
+		52FC08C81B374161002C603D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FC08A21B374160002C603D /* PenguinRace */;
+			targetProxy = 52FC08C71B374161002C603D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52FC08AE1B374160002C603D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC08AF1B374160002C603D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52FC08B31B374160002C603D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC08B41B374160002C603D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52FC08CD1B374161002C603D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FC08CE1B374161002C603D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FC08D01B374161002C603D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PenguinRace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epaga.PenguinRace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52FC08D11B374161002C603D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PenguinRace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epaga.PenguinRace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52FC08D31B374161002C603D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PenguinRaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epaga.PenguinRaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenguinRace.app/PenguinRace";
+			};
+			name = Debug;
+		};
+		52FC08D41B374161002C603D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PenguinRaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epaga.PenguinRaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenguinRace.app/PenguinRace";
+			};
+			name = Release;
+		};
+		52FC08D61B374161002C603D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PenguinRaceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epaga.PenguinRaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PenguinRace;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		52FC08D71B374161002C603D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PenguinRaceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epaga.PenguinRaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PenguinRace;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FC089E1B374160002C603D /* Build configuration list for PBXProject "PenguinRace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC08CD1B374161002C603D /* Debug */,
+				52FC08CE1B374161002C603D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FC08CF1B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC08D01B374161002C603D /* Debug */,
+				52FC08D11B374161002C603D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52FC08D21B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC08D31B374161002C603D /* Debug */,
+				52FC08D41B374161002C603D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52FC08D51B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC08D61B374161002C603D /* Debug */,
+				52FC08D71B374161002C603D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FC089B1B374160002C603D /* Project object */;
+}
