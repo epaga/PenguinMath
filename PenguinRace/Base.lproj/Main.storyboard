@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D87p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -18,43 +18,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFD-rG-pqx" customClass="SKView">
-                                <rect key="frame" x="0.0" y="200" width="600" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNo-X6-xko" customClass="SKView">
+                                <rect key="frame" x="300" y="200" width="300" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.072583407370000005" blue="0.093525311540000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning.png" translatesAutoresizingMaskIntoConstraints="NO" id="cPf-JE-2EZ">
-                                <rect key="frame" x="198" y="188" width="205" height="224"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="205" id="csa-Au-yQb"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBI-iu-Wur">
                                 <rect key="frame" x="270" y="476" width="60" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="joc-cF-DFe"/>
-                                    <constraint firstAttribute="height" constant="40" id="sJ8-dx-KXZ"/>
+                                    <constraint firstAttribute="width" constant="60" id="HIz-1Y-KYk"/>
+                                    <constraint firstAttribute="height" constant="40" id="tBK-F5-y6q"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="OK.png"/>
                                 <connections>
                                     <action selector="greenButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="e1U-0F-0gu"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFD-rG-pqx" customClass="SKView">
+                                <rect key="frame" x="0.0" y="200" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning.png" translatesAutoresizingMaskIntoConstraints="NO" id="cPf-JE-2EZ">
+                                <rect key="frame" x="195" y="195" width="205" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cPf-JE-2EZ" secondAttribute="height" multiplier="41:40" constant="-10.249999999999972" id="Is9-zS-g46"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="168" id="13J-nH-JhD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lFD-rG-pqx" secondAttribute="trailing" constant="-20" id="4Vf-2Q-3eJ"/>
-                            <constraint firstItem="WBI-iu-Wur" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="AxH-Wn-A2J"/>
-                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerX" secondItem="lFD-rG-pqx" secondAttribute="centerX" id="BQ1-u6-mnu"/>
-                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerY" secondItem="lFD-rG-pqx" secondAttribute="centerY" id="V5T-95-psG"/>
-                            <constraint firstItem="lFD-rG-pqx" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="bG5-R4-9pw"/>
-                            <constraint firstItem="lFD-rG-pqx" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-20" id="esm-eW-RTG"/>
-                            <constraint firstItem="WBI-iu-Wur" firstAttribute="top" secondItem="cPf-JE-2EZ" secondAttribute="bottom" constant="64" id="kag-bw-tMT"/>
-                            <constraint firstItem="lFD-rG-pqx" firstAttribute="height" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="0.333" id="qCq-Ll-JiV"/>
+                            <constraint firstItem="lFD-rG-pqx" firstAttribute="width" secondItem="3se-qz-xqx" secondAttribute="width" multiplier="0.5" id="1vZ-8p-417"/>
+                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="height" secondItem="lFD-rG-pqx" secondAttribute="height" constant="10" id="7zx-BI-0Eu"/>
+                            <constraint firstItem="lFD-rG-pqx" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="G76-2A-l4e"/>
+                            <constraint firstItem="lFD-rG-pqx" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="L2Z-CU-K5I"/>
+                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="-2.5" id="L3q-Vz-yyB"/>
+                            <constraint firstAttribute="trailing" secondItem="XNo-X6-xko" secondAttribute="trailing" id="OWO-Ra-AO8"/>
+                            <constraint firstItem="XNo-X6-xko" firstAttribute="width" secondItem="lFD-rG-pqx" secondAttribute="width" id="Rao-J5-RrM"/>
+                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="VCd-Y3-2xG"/>
+                            <constraint firstItem="XNo-X6-xko" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="eBp-0t-A70"/>
+                            <constraint firstItem="XNo-X6-xko" firstAttribute="height" secondItem="lFD-rG-pqx" secondAttribute="height" id="kOD-cY-7Iq"/>
+                            <constraint firstItem="WBI-iu-Wur" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="q5h-0j-J9V"/>
+                            <constraint firstItem="lFD-rG-pqx" firstAttribute="height" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="0.333" id="qbj-ta-lgg"/>
+                            <constraint firstItem="WBI-iu-Wur" firstAttribute="top" secondItem="cPf-JE-2EZ" secondAttribute="bottom" constant="71" id="zRB-FG-sBX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="skView" destination="lFD-rG-pqx" id="bcH-eE-m8k"/>
+                        <outlet property="skView" destination="lFD-rG-pqx" id="b38-Rh-ARz"/>
+                        <outlet property="skView2" destination="XNo-X6-xko" id="AfU-ko-gw0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

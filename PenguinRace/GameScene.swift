@@ -35,5 +35,9 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        if let p = childNodeWithName("Penguin") {
+            p.position.x += 1
+        }
+        
     }
 }

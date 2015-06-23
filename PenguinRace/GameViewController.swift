@@ -10,26 +10,27 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
-
     @IBOutlet weak var skView: SKView!
+    @IBOutlet weak var skView2: SKView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewDidLayoutSubviews() {
         if let scene = GameScene(fileNamed:"GameScene") {
-            // Configure the view.
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
-            
-            skView.presentScene(scene)
+            setupView(skView, withScene: scene)
         }
+        if let scene2 = GameScene(fileNamed:"GameScene") {
+            setupView(skView2, withScene: scene2)
+        }
+    }
+    func setupView(sceneView:SKView!, withScene scene:GameScene) {
+        // Configure the view.
+        sceneView.showsFPS = true
+        sceneView.showsNodeCount = true
+        
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        sceneView.ignoresSiblingOrder = true
+        
+        sceneView.presentScene(scene)
     }
 
     override func shouldAutorotate() -> Bool {
@@ -57,6 +58,8 @@ class GameViewController: UIViewController {
         if let p = skView.scene?.childNodeWithName("Penguin") {
             p.position.x += 10
         }
+        if let p = skView2.scene?.childNodeWithName("Penguin") {
+            p.position.x += 10
+        }
     }
-    
 }
