@@ -113,7 +113,6 @@
 		52FC08E51B374346002C603D /* OK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OK.png; sourceTree = "<group>"; };
 		52FC08E61B374346002C603D /* Pinguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pinguin.png; sourceTree = "<group>"; };
 		52FC08E71B374346002C603D /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
-		52FC09151B37448E002C603D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +163,6 @@
 		52FC08A51B374160002C603D /* PenguinRace */ = {
 			isa = PBXGroup;
 			children = (
-				52FC09151B37448E002C603D /* MyPlayground.playground */,
 				52FC08D81B374335002C603D /* media */,
 				52FC08A61B374160002C603D /* AppDelegate.swift */,
 				52FC08A81B374160002C603D /* GameScene.sks */,
@@ -625,6 +623,7 @@
 				52FC08D11B374161002C603D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52FC08D21B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRaceTests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +632,7 @@
 				52FC08D41B374161002C603D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52FC08D51B374161002C603D /* Build configuration list for PBXNativeTarget "PenguinRaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +641,7 @@
 				52FC08D71B374161002C603D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
