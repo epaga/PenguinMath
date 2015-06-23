@@ -22,10 +22,19 @@
                                 <rect key="frame" x="0.0" y="200" width="600" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning.png" translatesAutoresizingMaskIntoConstraints="NO" id="cPf-JE-2EZ">
+                                <rect key="frame" x="198" y="188" width="205" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="csa-Au-yQb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="168" id="13J-nH-JhD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lFD-rG-pqx" secondAttribute="trailing" constant="-20" id="4Vf-2Q-3eJ"/>
+                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerX" secondItem="lFD-rG-pqx" secondAttribute="centerX" id="BQ1-u6-mnu"/>
+                            <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerY" secondItem="lFD-rG-pqx" secondAttribute="centerY" id="V5T-95-psG"/>
                             <constraint firstItem="lFD-rG-pqx" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="bG5-R4-9pw"/>
                             <constraint firstItem="lFD-rG-pqx" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-20" id="esm-eW-RTG"/>
                             <constraint firstItem="lFD-rG-pqx" firstAttribute="height" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="0.333" id="qCq-Ll-JiV"/>
@@ -40,4 +49,7 @@
             <point key="canvasLocation" x="340" y="377"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lightning.png" width="256" height="256"/>
+    </resources>
 </document>
