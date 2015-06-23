@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D87p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -28,15 +28,28 @@
                                     <constraint firstAttribute="width" constant="205" id="csa-Au-yQb"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBI-iu-Wur">
+                                <rect key="frame" x="270" y="476" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="joc-cF-DFe"/>
+                                    <constraint firstAttribute="height" constant="40" id="sJ8-dx-KXZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="OK.png"/>
+                                <connections>
+                                    <action selector="greenButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="e1U-0F-0gu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cPf-JE-2EZ" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="168" id="13J-nH-JhD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lFD-rG-pqx" secondAttribute="trailing" constant="-20" id="4Vf-2Q-3eJ"/>
+                            <constraint firstItem="WBI-iu-Wur" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="AxH-Wn-A2J"/>
                             <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerX" secondItem="lFD-rG-pqx" secondAttribute="centerX" id="BQ1-u6-mnu"/>
                             <constraint firstItem="cPf-JE-2EZ" firstAttribute="centerY" secondItem="lFD-rG-pqx" secondAttribute="centerY" id="V5T-95-psG"/>
                             <constraint firstItem="lFD-rG-pqx" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="bG5-R4-9pw"/>
                             <constraint firstItem="lFD-rG-pqx" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-20" id="esm-eW-RTG"/>
+                            <constraint firstItem="WBI-iu-Wur" firstAttribute="top" secondItem="cPf-JE-2EZ" secondAttribute="bottom" constant="64" id="kag-bw-tMT"/>
                             <constraint firstItem="lFD-rG-pqx" firstAttribute="height" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="0.333" id="qCq-Ll-JiV"/>
                         </constraints>
                     </view>
@@ -50,6 +63,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="OK.png" width="256" height="128"/>
         <image name="lightning.png" width="256" height="256"/>
     </resources>
 </document>

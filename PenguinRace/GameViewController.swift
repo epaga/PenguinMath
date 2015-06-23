@@ -12,6 +12,8 @@ import SpriteKit
 class GameViewController: UIViewController {
 
     @IBOutlet weak var skView: SKView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,4 +52,11 @@ class GameViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+    @IBAction func greenButtonPressed(sender: AnyObject) {
+        if let p = skView.scene?.childNodeWithName("Penguin") {
+            p.position.x += 10
+        }
+    }
+    
 }
