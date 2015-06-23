@@ -61,6 +61,8 @@
 		52FC09121B374346002C603D /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08E71B374346002C603D /* wrong.wav */; };
 		52FC09131B374346002C603D /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08E71B374346002C603D /* wrong.wav */; };
 		52FC09141B374346002C603D /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08E71B374346002C603D /* wrong.wav */; };
+		52FC09171B374773002C603D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08A81B374160002C603D /* GameScene.sks */; };
+		52FC09181B374774002C603D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08A81B374160002C603D /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,7 @@
 		52FC08E51B374346002C603D /* OK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OK.png; sourceTree = "<group>"; };
 		52FC08E61B374346002C603D /* Pinguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pinguin.png; sourceTree = "<group>"; };
 		52FC08E71B374346002C603D /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		52FC09151B37448E002C603D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,7 @@
 		52FC08A51B374160002C603D /* PenguinRace */ = {
 			isa = PBXGroup;
 			children = (
+				52FC09151B37448E002C603D /* MyPlayground.playground */,
 				52FC08D81B374335002C603D /* media */,
 				52FC08A61B374160002C603D /* AppDelegate.swift */,
 				52FC08A81B374160002C603D /* GameScene.sks */,
@@ -347,6 +351,7 @@
 				52FC09131B374346002C603D /* wrong.wav in Resources */,
 				52FC090D1B374346002C603D /* OK.png in Resources */,
 				52FC08FE1B374346002C603D /* Delete.png in Resources */,
+				52FC09171B374773002C603D /* GameScene.sks in Resources */,
 				52FC09041B374346002C603D /* mountainbg.png in Resources */,
 				52FC09011B374346002C603D /* lightning.png in Resources */,
 				52FC08F51B374346002C603D /* bgtile.png in Resources */,
@@ -369,6 +374,7 @@
 				52FC09141B374346002C603D /* wrong.wav in Resources */,
 				52FC090E1B374346002C603D /* OK.png in Resources */,
 				52FC08FF1B374346002C603D /* Delete.png in Resources */,
+				52FC09181B374774002C603D /* GameScene.sks in Resources */,
 				52FC09051B374346002C603D /* mountainbg.png in Resources */,
 				52FC09021B374346002C603D /* lightning.png in Resources */,
 				52FC08F61B374346002C603D /* bgtile.png in Resources */,
