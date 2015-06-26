@@ -9,17 +9,31 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+    
+    override init(size: CGSize) {
+        super.init(size:size)
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
+    override func didMoveToView(view: SKView) {
+        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        
+        let screen1 = GameScreenNode(gameWindow:self.frame)
+        let screen2 = GameScreenNode(gameWindow:self.frame)
+        
+        self.addChild(screen1.screen)
+        self.addChild(screen2.screen)
+    }
+
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
         
         for touch in touches {
             let location = touch.locationInNode(self)
             
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
+            let sprite = SKSpriteNode(imageNamed:"Pinguin")
             
             sprite.xScale = 0.5
             sprite.yScale = 0.5

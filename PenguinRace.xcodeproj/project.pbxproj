@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52E6A6051B3DE59C006F3235 /* GameScreenNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E6A6041B3DE59C006F3235 /* GameScreenNode.swift */; };
+		52E6A6061B3DE59C006F3235 /* GameScreenNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E6A6041B3DE59C006F3235 /* GameScreenNode.swift */; };
+		52E6A6071B3DE59C006F3235 /* GameScreenNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E6A6041B3DE59C006F3235 /* GameScreenNode.swift */; };
 		52FC08A71B374160002C603D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08A61B374160002C603D /* AppDelegate.swift */; };
 		52FC08A91B374160002C603D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 52FC08A81B374160002C603D /* GameScene.sks */; };
 		52FC08AB1B374160002C603D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC08AA1B374160002C603D /* GameScene.swift */; };
@@ -83,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52E6A6041B3DE59C006F3235 /* GameScreenNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScreenNode.swift; sourceTree = "<group>"; };
 		52FC08A31B374160002C603D /* PenguinRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FC08A61B374160002C603D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FC08A81B374160002C603D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				52FC08A61B374160002C603D /* AppDelegate.swift */,
 				52FC08A81B374160002C603D /* GameScene.sks */,
 				52FC08AA1B374160002C603D /* GameScene.swift */,
+				52E6A6041B3DE59C006F3235 /* GameScreenNode.swift */,
 				52FC08AC1B374160002C603D /* GameViewController.swift */,
 				52FC08AE1B374160002C603D /* Main.storyboard */,
 				52FC08B11B374160002C603D /* Assets.xcassets */,
@@ -397,6 +402,7 @@
 				52FC08AB1B374160002C603D /* GameScene.swift in Sources */,
 				52FC08AD1B374160002C603D /* GameViewController.swift in Sources */,
 				52FC08A71B374160002C603D /* AppDelegate.swift in Sources */,
+				52E6A6051B3DE59C006F3235 /* GameScreenNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FC08C01B374161002C603D /* PenguinRaceTests.swift in Sources */,
+				52E6A6061B3DE59C006F3235 /* GameScreenNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FC08CB1B374161002C603D /* PenguinRaceUITests.swift in Sources */,
+				52E6A6071B3DE59C006F3235 /* GameScreenNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
