@@ -9,6 +9,8 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    var screen1: GameScreenNode?
+    var screen2: GameScreenNode?
     
     override init(size: CGSize) {
         super.init(size:size)
@@ -20,11 +22,12 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
         
-        let screen1 = GameScreenNode(gameWindow:self.frame)
-        let screen2 = GameScreenNode(gameWindow:self.frame)
-        
-        self.addChild(screen1.screen)
-        self.addChild(screen2.screen)
+        screen1 = GameScreenNode(gameWindow:self.frame, pixelWindow:CGSize(width: view.contentScaleFactor*self.frame.size.width, height: view.contentScaleFactor * self.frame.size.height))
+        screen2 = GameScreenNode(gameWindow:self.frame, pixelWindow:CGSize(width: view.contentScaleFactor*self.frame.size.width, height: view.contentScaleFactor * self.frame.size.height))
+        screen2?.screenNode.position = CGPoint(x:self.frame.size.width, y:self.frame.size.height)
+        screen2?.screenNode.zRotation = CGFloat(M_PI)
+        self.addChild(screen1!.screenNode)
+        self.addChild(screen2!.screenNode)
     }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -49,9 +52,5 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-        if let p = childNodeWithName("Penguin") {
-            p.position.x += 1
-        }
-        
     }
 }

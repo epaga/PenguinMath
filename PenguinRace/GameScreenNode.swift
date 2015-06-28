@@ -11,35 +11,53 @@ import SpriteKit
 
 class GameScreenNode {
     
-    let screen:SKSpriteNode
-    var penguin1:SKSpriteNode = SKSpriteNode(imageNamed: "Pinguin")
-    var penguin2:SKSpriteNode = SKSpriteNode(imageNamed: "Pinguin")
+    let background:SKSpriteNode
+    let screenNode:SKCropNode
+    var mainPenguin:SKSpriteNode = SKSpriteNode(imageNamed: "Pinguin")
+    var otherPenguin:SKSpriteNode = SKSpriteNode(imageNamed: "Pinguin")
     let gameWindow:CGRect
     
-    init(gameWindow gWindow:CGRect) {
+    init(gameWindow gWindow:CGRect, pixelWindow:CGSize) {
         gameWindow = gWindow
-        screen = SKSpriteNode(imageNamed: "mountainbg")
-        screen.xScale = gameWindow.size.height / screen.size.height
-        screen.yScale = screen.xScale
-        screen.position = CGPoint(x:CGRectGetMidX(gameWindow),
-            y:CGRectGetMidY(gameWindow))
+        background = SKSpriteNode(imageNamed: "mountainbg")
+        background.xScale = gameWindow.size.height / background.size.height
+        background.yScale = background.xScale
+        background.position = CGPoint(x:0,y:CGRectGetMidY(gameWindow))
+        screenNode = SKCropNode()
+
+        setupPenguin(mainPenguin, offset: 60)
+        setupPenguin(otherPenguin, offset: 80)
         
-        setupPenguin(penguin1)
-        setupPenguin(penguin2)
-        
-        screen.addChild(penguin1)
-        screen.addChild(penguin2)
+        background.addChild(otherPenguin)
+        background.addChild(mainPenguin)
+
+        screenNode.addChild(background)
+        let maskNode = SKSpriteNode(color: UIColor.blackColor(), size: CGSize(width: pixelWindow.width/2,height:pixelWindow.height))
+        screenNode.maskNode = maskNode
+        moveToPosition(0)
     }
-    func setupPenguin(penguin:SKSpriteNode) {
+    func setupPenguin(penguin:SKSpriteNode, offset:CGFloat) {
         penguin.xScale = gameWindow.size.height/3/penguin.size.height
         penguin.yScale = penguin.xScale
-        penguin.position = CGPoint(x:-screen.size.width/2/screen.xScale+50,
-            y:-screen.size.height/2/screen.yScale+70)
+        let newx = -background.size.width/2/background.xScale+50
+        let newy = -background.size.height/2/background.yScale+offset
+        penguin.position = CGPoint(x:newx,y:newy)
     }
-    
+    func movePenguinTo(p:SKSpriteNode, _ x:CGFloat) {
+        var newx = -background.size.width/2/background.xScale+50
+        newx += (x/100.0)*(background.size.width/background.xScale-100)
+        p.position = CGPoint(x:newx,y:mainPenguin.position.y)
+    }
     // from 0 = start to 100=finish
-    func moveToPosition(x:Double) {
-        
+    func moveToPosition(x:CGFloat) {
+        movePenguinTo(mainPenguin, x)
+        var backgroundX = background.size.width/2
+        backgroundX += (x/100.0)*(gameWindow.size.width-background.size.width/background.xScale)
+        NSLog("backgroundWidth: \(background.size.width) xScale: \(background.xScale) origBGW: \(background.size.width/background.xScale) gameWindow: \(gameWindow.size.width) backgroundX: \(backgroundX)")
+        background.position = CGPoint(x:backgroundX, y:background.position.y)
+    }
+    func moveOtherToPosition(x:CGFloat) {
+        movePenguinTo(otherPenguin, x)
     }
 
     required init?(coder aDecoder: NSCoder) {
