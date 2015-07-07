@@ -27,8 +27,8 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
         
-        screen1 = GameScreenNode(gameWindow:self.frame, pixelWindow:CGSize(width: view.contentScaleFactor*self.frame.size.width, height: view.contentScaleFactor * self.frame.size.height))
-        screen2 = GameScreenNode(gameWindow:self.frame, pixelWindow:CGSize(width: view.contentScaleFactor*self.frame.size.width, height: view.contentScaleFactor * self.frame.size.height))
+        screen1 = GameScreenNode(gameWindow:self.frame, pixelWindow:CGSize(width: 2*self.frame.size.width, height: 2 * self.frame.size.height))
+        screen2 = GameScreenNode(gameWindow:self.frame, pixelWindow:CGSize(width: 2*self.frame.size.width, height: 2 * self.frame.size.height))
         screen2?.screenNode.position = CGPoint(x:self.frame.size.width, y:self.frame.size.height)
         screen2?.screenNode.zRotation = CGFloat(M_PI)
         self.addChild(screen1!.screenNode)
@@ -39,6 +39,7 @@ class GameScene: SKScene {
         if lastTime == 0 {
             lastTime = currentTime-0.01
         }
+        let elapsedTime = CGFloat(currentTime - lastTime)
         if speed1 < baseSpeed {
             speed1 *= 1.01
         } else if speed1 > baseSpeed {
@@ -49,8 +50,8 @@ class GameScene: SKScene {
         } else if speed2 > baseSpeed {
             speed2 *= 0.999
         }
-        pos1 += CGFloat(currentTime - lastTime)*speed1
-        pos2 += CGFloat(currentTime - lastTime)*speed2
+        pos1 += elapsedTime*speed1
+        pos2 += elapsedTime*speed2
         if pos1 >= 100 {
             pos1 = 100
         }
