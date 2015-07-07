@@ -45,16 +45,18 @@ class GameScreenNode {
     }
     func movePenguinTo(p:SKSpriteNode, _ x:CGFloat) {
         var newx = -background.size.width/2/background.xScale+50
-        newx += (x/100.0)*(background.size.width/background.xScale-100)
-        p.position = CGPoint(x:newx,y:mainPenguin.position.y)
+        newx += (x/100.0)*(background.size.width/background.xScale-150)
+        p.runAction(SKAction.moveToX(newx, duration: 0.1))
+//        p.position = CGPoint(x:newx,y:p.position.y)
     }
     // from 0 = start to 100=finish
     func moveToPosition(x:CGFloat) {
         movePenguinTo(mainPenguin, x)
         var backgroundX = background.size.width/2
-        backgroundX += (x/100.0)*(gameWindow.size.width-background.size.width/background.xScale)
+        backgroundX += (x/100.0)*(gameWindow.size.width/2-background.size.width)
         NSLog("backgroundWidth: \(background.size.width) xScale: \(background.xScale) origBGW: \(background.size.width/background.xScale) gameWindow: \(gameWindow.size.width) backgroundX: \(backgroundX)")
-        background.position = CGPoint(x:backgroundX, y:background.position.y)
+        background.runAction(SKAction.moveToX(backgroundX, duration: 0.1))
+//        background.position = CGPoint(x:backgroundX, y:background.position.y)
     }
     func moveOtherToPosition(x:CGFloat) {
         movePenguinTo(otherPenguin, x)

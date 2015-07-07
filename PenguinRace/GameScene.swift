@@ -11,7 +11,9 @@ import SpriteKit
 class GameScene: SKScene {
     var screen1: GameScreenNode?
     var screen2: GameScreenNode?
-    
+    var pos1: CGFloat = 0
+    var pos2: CGFloat = 0
+    var lastTime: NSTimeInterval = 0
     override init(size: CGSize) {
         super.init(size:size)
     }
@@ -51,6 +53,21 @@ class GameScene: SKScene {
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        if lastTime == 0 {
+            lastTime = currentTime
+        }
+        pos1 += CGFloat(currentTime - lastTime)*5
+        pos2 += CGFloat(currentTime - lastTime)*5 / 1.2
+        if pos1 >= 100 {
+            pos1 = 100
+        }
+        if pos2 >= 100 {
+            pos2 = 100
+        }
+        screen1?.moveToPosition(pos1)
+        screen1?.moveOtherToPosition(pos2)
+        screen2?.moveToPosition(pos2)
+        screen2?.moveOtherToPosition(pos1)
+        lastTime = currentTime
     }
 }
