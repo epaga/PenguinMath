@@ -11,11 +11,11 @@ import SpriteKit
 
 class GameViewController: UIViewController {
     @IBOutlet weak var skView: SKView!
-    
+    var scene:GameScene? = nil
     
     override func viewDidLayoutSubviews() {
-        let scene = GameScene(size: skView.bounds.size)
-        setupView(skView, withScene: scene)
+        scene = GameScene(size: skView.bounds.size)
+        setupView(skView, withScene: scene!)
     }
     func setupView(sceneView:SKView!, withScene scene:GameScene) {
         // Configure the view.
@@ -50,8 +50,6 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func greenButtonPressed(sender: AnyObject) {
-        if let p = skView.scene?.childNodeWithName("Penguin") {
-            p.position.x += 10
-        }
+        scene?.speed1 += 0.25
     }
 }

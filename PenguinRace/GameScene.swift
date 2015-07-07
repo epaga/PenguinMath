@@ -13,6 +13,9 @@ class GameScene: SKScene {
     var screen2: GameScreenNode?
     var pos1: CGFloat = 0
     var pos2: CGFloat = 0
+    let baseSpeed: CGFloat = 3
+    var speed1: CGFloat = 2
+    var speed2: CGFloat = 2
     var lastTime: NSTimeInterval = 0
     override init(size: CGSize) {
         super.init(size:size)
@@ -31,33 +34,23 @@ class GameScene: SKScene {
         self.addChild(screen1!.screenNode)
         self.addChild(screen2!.screenNode)
     }
-
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
-        
-        for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Pinguin")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
-    }
    
     override func update(currentTime: CFTimeInterval) {
         if lastTime == 0 {
-            lastTime = currentTime
+            lastTime = currentTime-0.01
         }
-        pos1 += CGFloat(currentTime - lastTime)*5
-        pos2 += CGFloat(currentTime - lastTime)*5 / 1.2
+        if speed1 < baseSpeed {
+            speed1 *= 1.01
+        } else if speed1 > baseSpeed {
+            speed1 *= 0.999
+        }
+        if speed2 < baseSpeed {
+            speed2 *= 1.01
+        } else if speed2 > baseSpeed {
+            speed2 *= 0.999
+        }
+        pos1 += CGFloat(currentTime - lastTime)*speed1
+        pos2 += CGFloat(currentTime - lastTime)*speed2
         if pos1 >= 100 {
             pos1 = 100
         }
